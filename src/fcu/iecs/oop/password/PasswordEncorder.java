@@ -2,20 +2,14 @@ package fcu.iecs.oop.password;
 
 public class PasswordEncorder {
 		private String Password;
-		
+		private char[] a={'a','A','e','E','i','I','o','O','t','T'};
+		private char[] b={'4','4','3','3','1','1','0','0','7','7'};
+		private int i;
 		public String encode(String password){
 			Password=password;
-			Password=Password.replace('a','4');
-			Password=Password.replace('A','4');
-			Password=Password.replace('e','3');
-			Password=Password.replace('E','3');
-			Password=Password.replace('i','1');
-			Password=Password.replace('I','1');
-			Password=Password.replace('o','0');
-			Password=Password.replace('O','0');
-			Password=Password.replace('t','7');
-			Password=Password.replace('T','7');
-			
+			for(i=0;i<10;i++){
+				Password=Password.replace(a[i],b[i]);
+			}		
 			return Password;
 		}
 		

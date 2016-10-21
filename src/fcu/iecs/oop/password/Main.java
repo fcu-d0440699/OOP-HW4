@@ -9,12 +9,13 @@ public class Main {
 		PasswordEncorder pe = new PasswordEncorder();
 		Scanner scanner = new Scanner(System.in);
 		b="exit";
-		while(!(a.equalsIgnoreCase(b))){
+		
+		do{
 		System.out.println("Please enter a password: ");
 		a =scanner.next();
 		System.out.println(pe.encode(a));
-		
-		}//while(!(a.equalsIgnoreCase(b)));
+		System.out.println("\n");
+		}while(!(a.equalsIgnoreCase(b)));
 		
 		scanner.close();
 	}
