@@ -12,9 +12,9 @@ public class Main {
 		int loop;
 		System.out.println("Please enter a number: ");
 		loop =scanner.nextInt();
-		do{
+		for(NT.count=1;NT.count<=loop;NT.count++){
 			NT.tiida();
-		}while(NT.count==loop);
+		}
 		
 		scanner.close();
 	}
